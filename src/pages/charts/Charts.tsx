@@ -1,4 +1,3 @@
-import React from 'react'
 import BarCharts from './BarCharts'
 import PieCharts from './PieCharts'
 import AreaCharts from './AreaCharts'

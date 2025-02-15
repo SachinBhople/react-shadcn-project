@@ -24,7 +24,6 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover"
-import { toast } from "@/hooks/use-toast"
 
 const FormSchema = z.object({
     dob: z.date({
@@ -37,7 +36,7 @@ export function DatePick() {
         resolver: zodResolver(FormSchema),
     })
 
-    function onSubmit(data: z.infer<typeof FormSchema>) {
+    function onSubmit() {
         console.log("SUBMIT");
         alert("From Submit")
         // toast({
